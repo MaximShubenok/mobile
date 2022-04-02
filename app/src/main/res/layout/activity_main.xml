@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:padding="8dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp"
+    >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/back"
+
+                />
+
+            <TextView
+                app:layout_constraintLeft_toRightOf="@+id/back"
+                android:layout_width="216dp"
+                android:layout_height="24dp"
+                android:background="@color/white"
+                android:text="Notifications"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/search"
+                >
+
+            </TextView>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/search"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/search"
+
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="590dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="8dp"
+            android:backgroundTint="#F5F5F5"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="12dp"
+            android:orientation="vertical"
+
+
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/block1"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+
+                >
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/image1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/avatar1"
+                    />
+
+                <TextView
+                    android:id="@+id/main_text"
+                    app:layout_constraintLeft_toRightOf="@+id/image1"
+                    android:layout_width="250dp"
+                    android:layout_height="20dp"
+                    android:text="Roman Kamushken"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="16dp"
+                    />
+
+                <TextView
+                    android:id="@+id/dop_text"
+                    app:layout_constraintTop_toBottomOf="@+id/main_text"
+                    app:layout_constraintLeft_toRightOf="@+id/image1"
+                    android:layout_width="250dp"
+                    android:layout_height="20dp"
+                    android:text="2 days ago"
+                    android:textColor="#A0A0A0"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="2dp"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Check out awesome updates for Android design kit for Figma. Now more screens and more categories."
+                android:textColor="@color/black"
+                >
+            </TextView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/text_replays"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="117 REPLAYS"
+                    android:textSize="10dp"
+                    android:textColor="#416FDB"
+                    android:gravity="bottom"
+                    />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:srcCompat="@drawable/thumb_up_outline"
+
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="8dp"
+            android:backgroundTint="#F5F5F5"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="12dp"
+            android:orientation="vertical"
+
+
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/block1"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+
+                >
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/image1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/avatar1"
+                    />
+
+                <TextView
+                    android:id="@+id/main_text"
+                    app:layout_constraintLeft_toRightOf="@+id/image1"
+                    android:layout_width="250dp"
+                    android:layout_height="20dp"
+                    android:text="Tina Turbina"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="16dp"
+                    />
+
+                <TextView
+                    android:id="@+id/dop_text"
+                    app:layout_constraintTop_toBottomOf="@+id/main_text"
+                    app:layout_constraintLeft_toRightOf="@+id/image1"
+                    android:layout_width="250dp"
+                    android:layout_height="20dp"
+                    android:text="18 minutes ago"
+                    android:textColor="#A0A0A0"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="2dp"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="“into component container and with resizing constraints set????”"
+                android:textColor="@color/black"
+                >
+            </TextView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/text_replays"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="117 REPLAYS"
+                    android:textSize="10dp"
+                    android:textColor="#416FDB"
+                    android:gravity="bottom"
+                    />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:srcCompat="@drawable/thumb_up_outline"
+
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="8dp"
+            android:backgroundTint="#F5F5F5"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="12dp"
+            android:orientation="vertical"
+
+
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/block1"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+
+                >
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/image1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/avatar1"
+                    />
+
+                <TextView
+                    android:id="@+id/main_text"
+                    app:layout_constraintLeft_toRightOf="@+id/image1"
+                    android:layout_width="250dp"
+                    android:layout_height="20dp"
+                    android:text="Tina Turbina"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="16dp"
+                    />
+
+                <TextView
+                    android:id="@+id/dop_text"
+                    app:layout_constraintTop_toBottomOf="@+id/main_text"
+                    app:layout_constraintLeft_toRightOf="@+id/image1"
+                    android:layout_width="250dp"
+                    android:layout_height="20dp"
+                    android:text="18 minutes ago"
+                    android:textColor="#A0A0A0"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="2dp"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="“into component container and with resizing constraints set????”"
+                android:textColor="@color/black"
+                >
+            </TextView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/text_replays"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="117 REPLAYS"
+                    android:textSize="10dp"
+                    android:textColor="#416FDB"
+                    android:gravity="bottom"
+                    />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:srcCompat="@drawable/thumb_up_outline"
+
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/cardview_dark_background"
+        >
+
+        <LinearLayout
+            android:id="@+id/shopping"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/book_open"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:background="@color/white"
+            android:gravity="center"
+            >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:srcCompat="@drawable/shopping"
+                />
+        </LinearLayout>
+        <LinearLayout
+            app:layout_constraintLeft_toRightOf="@+id/shopping"
+            app:layout_constraintRight_toLeftOf="@+id/cart"
+            android:id="@+id/book_open"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:background="@color/white"
+            android:gravity="center"
+            >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:srcCompat="@drawable/book_open_variant"
+                />
+        </LinearLayout>
+        <LinearLayout
+            app:layout_constraintRight_toLeftOf="@+id/tag_heart"
+            app:layout_constraintLeft_toRightOf="@+id/book_open"
+            android:id="@+id/cart"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:background="@color/white"
+            android:gravity="center"
+            >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:srcCompat="@drawable/cart"
+                />
+        </LinearLayout>
+        <LinearLayout
+            app:layout_constraintRight_toLeftOf="@+id/heart_filed"
+            app:layout_constraintLeft_toRightOf="@+id/cart"
+            android:id="@+id/tag_heart"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:background="@color/white"
+            android:gravity="center"
+            >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:srcCompat="@drawable/tag_heart"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/tag_heart"
+            android:id="@+id/heart_filed"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:background="@color/white"
+            android:gravity="center"
+            >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:srcCompat="@drawable/heart_filled"
+                />
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="15dp"
+                android:text="Account"
+                android:textSize="12dp"
+                android:gravity="center"
+                />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
